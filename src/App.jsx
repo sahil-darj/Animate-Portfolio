@@ -8,6 +8,7 @@ import About from "./Components/About/About.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
 import Contact from "./Components/Contact/Contact.jsx";
 import BlurBlob from "./Components/BlurBlob.jsx";
+import CertificateSection from "./Components/Certificate/Certificate.jsx";
 
 import { RiGhost2Fill } from "react-icons/ri";
 
@@ -26,6 +27,7 @@ function App() {
         <Experience />
 
         <Work />
+        <CertificateSection />
         <Education />
         <Contact />
         <Footer />

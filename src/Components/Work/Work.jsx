@@ -120,6 +120,7 @@ const Work = () => {
                     View Live
                   </a>
                 </div>
+                +
               </div>
             </div>
           </div>

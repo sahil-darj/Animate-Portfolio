@@ -12,10 +12,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_ov78gpe", // Replace with your EmailJS Service ID
-        "template_kge948k", // Replace with your EmailJS Template ID
+        "service_eloq0p8", // Replace with your EmailJS Service ID
+        "template_g9u7nr3", // Replace with your EmailJS Template ID
         form.current,
-        "DC-YR6AfGegdMKNx-" // Replace with your EmailJS Public Key
+        "kK9XlVwZzwONRwPoX" // Replace with your EmailJS Public Key
       )
       .then(
         () => {
@@ -76,22 +76,22 @@ const Contact = () => {
           className="mt-4 flex flex-col space-y-4"
         >
           <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+            className="w-full p-3 rounded-md bg-[#131025] text-white border border-gray-600 focus:outline-none focus:border-purple-500"
+          />
+          <input
             type="email"
-            name="user_email"
+            name="email"
             placeholder="Your Email"
             required
             className="w-full p-3 rounded-md bg-[#131025] text-white border border-gray-600 focus:outline-none focus:border-purple-500"
           />
           <input
             type="text"
-            name="user_name"
-            placeholder="Your Name"
-            required
-            className="w-full p-3 rounded-md bg-[#131025] text-white border border-gray-600 focus:outline-none focus:border-purple-500"
-          />
-          <input
-            type="text"
-            name="subject"
+            name="title"
             placeholder="Subject"
             required
             className="w-full p-3 rounded-md bg-[#131025] text-white border border-gray-600 focus:outline-none focus:border-purple-500"
