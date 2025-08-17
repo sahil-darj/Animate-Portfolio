@@ -6,7 +6,7 @@ A **modern, responsive, and fully customizable portfolio website** built with **
 ---
 
 ## 🚀 Live Demo  
-🔗 <a  
+🔗 <a  href="https://portfolio-tau-ochre.vercel.app/" > VIEW LIVE </a>
 
 ---
 
