@@ -1,12 +1,51 @@
-# React + Vite
+# 🌐 Animated Portfolio Website  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **modern, responsive, and fully customizable portfolio website** built with **React.js** and **Tailwind CSS**.  
+✨ Loved by developers and students worldwide — with **27K+ views on YouTube**!  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo  
+🔗 <a  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack  
+- ⚛️ **React.js** – Component-based UI  
+- 🎨 **Tailwind CSS** – Utility-first styling  
+- 💾 **Vercel** – Lightning-fast deployment  
+
+---
+
+## 📁 Features  
+- ✅ Fully responsive across devices 📱💻  
+- ✅ Smooth animations & scroll effects ✨  
+- ✅ Modular & reusable React components 🧩  
+- ✅ Easy to customize with Tailwind utilities 🎯  
+- ✅ Professional sections: **About, Skills, Projects, Contact** 👨‍💻  
+
+---
+
+## ⚡ Getting Started  
+
+Clone the repo and make it your own in minutes:  
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/sahil-darj/Animate-Portfolio.git
+cd myportfolio
+
+# 2. Install dependencies
+npm install
+
+# 3. Run the app
+npm start
+
+# 4. Build for production
+npm run build
+```
+
+🌟 Credits
+
+Made with ❤️ by Sahil Darji.
+If you like this project, please ⭐ the repo and share it! 🚀
