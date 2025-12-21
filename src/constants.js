@@ -36,6 +36,8 @@ import micro from "./assets/tech_logo/ms.png";
 import ml from "./assets/tech_logo/ml.png";
 import dj from "./assets/tech_logo/django.png";
 import wp from "./assets/tech_logo/wordpress.png";
+import php from "./assets/tech_logo/phpp.png";
+import threejs from "./assets/tech_logo/3js.png";
 // Experience Section Logo's
 import patelweb from "./assets/company_logo/patel.png";
 import ibm from "./assets/company_logo/ibm.png";
@@ -52,9 +54,12 @@ import ms from "./assets/education_logo/MS.jpg";
 //import vpsLogo from "./assets/education_logo/vps_logo.png";
 
 // Project Section Logo's
+import VIE from "./assets/work_logo/vie.png";
+import Di from "./assets/work_logo/Di.png";
+import Machine from "./assets/work_logo/machine.png";
 import AI from "./assets/work_logo/Ai agent.png";
 import CC from "./assets/work_logo/CC.png";
-
+import vibrant from "./assets/company_logo/1736916708164.jpeg";
 import Rewear from "./assets/work_logo/Rewear.png";
 import RE from "./assets/work_logo/Renteeasy.png";
 import CutomerSeg from "./assets/work_logo/CS.jpg";
@@ -113,7 +118,7 @@ export const SkillsInfo = [
       { name: "Express JS", logo: expressjsLogo },
       { name: "MySQL", logo: mysqlLogo },
       { name: "MongoDB", logo: mongodbLogo },
-
+      { name: "PHP", logo: php },
       { name: "Django", logo: dj },
     ],
   },
@@ -122,7 +127,7 @@ export const SkillsInfo = [
     skills: [
       { name: "C", logo: cLogo },
       { name: "C++", logo: cppLogo },
-      { name: "Java", logo: javaLogo },
+      // { name: "Java", logo: javaLogo },
       { name: "Python", logo: pythonLogo },
       { name: "JavaScript", logo: javascriptLogo },
       { name: "TypeScript", logo: typescriptLogo },
@@ -137,6 +142,10 @@ export const SkillsInfo = [
       { name: "Compass", logo: mcLogo },
       { name: "Figma", logo: figmaLogo },
       { name: "MS Office", logo: micro },
+      { name: "Three JS", logo: threejs },
+      { name: "Vercel", logo: vercelLogo },
+      { name: "GSAP", logo: gsapLogo },
+
       { name: "Machine Learning", logo: ml },
     ],
   },
@@ -145,6 +154,23 @@ export const SkillsInfo = [
 export const experiences = [
   {
     id: 0,
+    img: vibrant,
+    role: "Full Stack Developer Intern",
+    company: "Vibrant India Tech",
+    date: "Nov 2025 – Present",
+    desc: "Working on real-world client production projects involving full-stack and AI-enabled web solutions. Responsible for developing responsive business and industrial websites, implementing backend logic, integrating APIs, and supporting deployment workflows while collaborating with senior developers and clients.",
+    skills: [
+      "React.js",
+      "JavaScript",
+      "REST APIs",
+      "Backend Development",
+      "API Integration",
+      "UI/UX Optimization",
+      "Deployment",
+    ],
+  },
+  {
+    id: 1,
     img: ibm,
     role: " AI & Cloud Intern",
     company: "IBM SkillsBuild & Edunet Foundation",
@@ -161,7 +187,23 @@ export const experiences = [
     ],
   },
   {
-    id: 1,
+    id: 3,
+    img: ibm,
+    role: "Front-End Development Intern",
+    company: "IBM SkillsBuild & Edunet Foundation",
+    date: "Aug 2025 – Oct 2025",
+    desc: "Built responsive and reusable UI components using React.js and Tailwind CSS. Integrated frontend components with REST APIs and followed modern frontend development practices including component-based architecture and basic state management.",
+    skills: [
+      "React.js",
+      "Tailwind CSS",
+      "Frontend Development",
+      "REST API Integration",
+      "Responsive Design",
+      "Component-Based Architecture",
+    ],
+  },
+  {
+    id: 2,
     img: patelweb,
     role: "Fullstack Developer",
     company: "Patel Web Solution",
@@ -178,15 +220,15 @@ export const experiences = [
       "Bootstrap",
     ],
   },
-  {
-    id: 2,
-    img: patelweb,
-    role: "Web Developer",
-    company: "Patel Web Solution",
-    date: "July 2022- Aug 2022",
-    desc: "Gained practical experience in HTML, CSS, and PHP for web development. Built basic web pages and forms with styling and PHP integration",
-    skills: ["HTML", "CSS", "PHP", "PHPmyadmin", "SQL"],
-  },
+  // {
+  //   id: 2,
+  //   img: patelweb,
+  //   role: "Web Developer",
+  //   company: "Patel Web Solution",
+  //   date: "July 2022- Aug 2022",
+  //   desc: "Gained practical experience in HTML, CSS, and PHP for web development. Built basic web pages and forms with styling and PHP integration",
+  //   skills: ["HTML", "CSS", "PHP", "PHPmyadmin", "SQL"],
+  // },
 ];
 
 export const education = [
@@ -220,6 +262,62 @@ export const education = [
 ];
 
 export const projects = [
+  {
+    id: 1,
+    title: "Vibrant India Expo",
+    description:
+      "A production-ready, responsive web platform developed for Vibrant India Expo to showcase exhibitors, industrial machinery, and services. The platform focuses on performance-optimized UI/UX, clear navigation, and scalability for real-world business use.",
+    image: VIE,
+    tags: [
+      "HTML",
+      "Bootstrap",
+      "Tailwind CSS",
+      "JavaScript",
+      "EmailJS",
+      "Responsive Design",
+      "UI/UX Optimization",
+
+      "Production Deployment",
+    ],
+    github: "",
+    webapp: "https://vibrant-india-expo.vercel.app/",
+  },
+  {
+    id: 2,
+    title: "Dinesh Industries",
+    description:
+      "A professional industrial business website built for Dinesh Industries, highlighting company services, products, and industrial capabilities. Designed with a clean, modern UI and optimized for performance and responsiveness across devices.",
+    image: Di,
+    tags: [
+      "React JS",
+      "Tailwind CSS",
+      "HTML",
+      "CSS",
+      "Business Website",
+      "Responsive UI",
+    ],
+    github: "",
+    webapp: "https://dinesh-industries-website.vercel.app/",
+  },
+  {
+    id: 3,
+    title: "Industrial Machinery Website",
+    description:
+      "A mobile-first industrial machinery showcase website designed to present machinery products with structured layouts, fast load times, and responsive design tailored for industrial clients and business users.",
+    image: Machine,
+    tags: [
+      "HTML",
+      "Bootstrap",
+      "JavaScript",
+      "EmailJS",
+      "Responsive Design",
+      "Industrial UI",
+      "Performance Optimization",
+    ],
+    github: "",
+    webapp: "https://machinerywebsite.vercel.app/",
+  },
+
   {
     id: 0,
     title: "CampusConnect",
