@@ -77,7 +77,10 @@ import ET from "./assets/work_logo/ET.png";
 ////import cmLogo from "./assets/work_logo/cm.png";
 //import imagesearchLogo from "./assets/work_logo/image_search.png";
 //import removebgLogo from "./assets/work_logo/remove_bg.png";
-
+import ng from "./assets/work_logo/ng.png";
+import ns from "./assets/work_logo/ns.png";
+import alm from "./assets/work_logo/alm.png";
+import vitinternship from "./assets/certificate/vit internship.jpg";
 //Certificate
 import IBMML from "./assets/certificate/IBM ML-page-00001.jpg";
 import IBM1 from "./assets/certificate/Exploratory Data Analysis for Machine Learning-page-00001.jpg";
@@ -91,6 +94,7 @@ import Webdev from "./assets/certificate/Web Development Intern-page-00001.jpg";
 import HP from "./assets/certificate/Hp-page-00001.jpg";
 import KSE from "./assets/certificate/KSE-page-00001.jpg";
 import SB from "./assets/certificate/Skyblue-page-00001.jpg";
+import mss from "./assets/work_logo/microsoft.png";
 
 export const SkillsInfo = [
   {
@@ -116,7 +120,7 @@ export const SkillsInfo = [
     skills: [
       { name: "Node JS", logo: nodejsLogo },
       { name: "Express JS", logo: expressjsLogo },
-      { name: "MySQL", logo: mysqlLogo },
+      // { name: "MySQL", logo: mysqlLogo },
       { name: "MongoDB", logo: mongodbLogo },
       { name: "PHP", logo: php },
       { name: "Django", logo: dj },
@@ -171,6 +175,23 @@ export const experiences = [
   },
   {
     id: 1,
+    img: mss,
+    role: "Power BI Intern",
+    company: "Microsoft & Edunet Foundation",
+    date: "Feb 2026 - Mar 2026",
+    desc: "Completed a virtual short-term internship focused on data visualization and business intelligence using Power BI. Learned to connect, transform, and model datasets, create interactive dashboards, and generate actionable insights. Gained practical experience through real-world business scenarios and guided exercises under expert mentorship.",
+    skills: [
+      "Power BI",
+      "Data Visualization",
+      "Business Intelligence (BI)",
+      "Data Modeling",
+      "DAX (Data Analysis Expressions)",
+      "Excel Integration",
+      "Interactive Dashboards",
+    ],
+  },
+  {
+    id: 2,
     img: ibm,
     role: " AI & Cloud Intern",
     company: "IBM SkillsBuild & Edunet Foundation",
@@ -202,24 +223,24 @@ export const experiences = [
       "Component-Based Architecture",
     ],
   },
-  {
-    id: 2,
-    img: patelweb,
-    role: "Fullstack Developer",
-    company: "Patel Web Solution",
-    date: "Sept 2023- Oct 2023",
-    desc: "Developed dynamic and scalable web applications using the MERN stack, handling both frontend and backend development. Collaborated with cross-functional teams to build responsive UI, implement RESTful APIs, and optimize application performance in an agile environment.",
-    skills: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "React JS",
-      "Python",
-      "Tailwind CSS",
-      "Django",
-      "Bootstrap",
-    ],
-  },
+  // {
+  //   id: 2,
+  //   img: patelweb,
+  //   role: "Fullstack Developer",
+  //   company: "Patel Web Solution",
+  //   date: "Sept 2023- Oct 2023",
+  //   desc: "Developed dynamic and scalable web applications using the MERN stack, handling both frontend and backend development. Collaborated with cross-functional teams to build responsive UI, implement RESTful APIs, and optimize application performance in an agile environment.",
+  //   skills: [
+  //     "HTML",
+  //     "CSS",
+  //     "JavaScript",
+  //     "React JS",
+  //     "Python",
+  //     "Tailwind CSS",
+  //     "Django",
+  //     "Bootstrap",
+  //   ],
+
   // {
   //   id: 2,
   //   img: patelweb,
@@ -264,81 +285,61 @@ export const education = [
 export const projects = [
   {
     id: 1,
-    title: "Vibrant India Expo",
+    title: "Naroda Group",
     description:
-      "A production-ready, responsive web platform developed for Vibrant India Expo to showcase exhibitors, industrial machinery, and services. The platform focuses on performance-optimized UI/UX, clear navigation, and scalability for real-world business use.",
-    image: VIE,
+      "A database-integrated business website developed for Naroda Group to showcase services, projects, and company profile. Emphasizes responsive design, intuitive navigation, and scalable backend functionality using PHP and MySQL.",
+    image: ng,
     tags: [
       "HTML",
-      "Bootstrap",
-      "Tailwind CSS",
+      "CSS",
       "JavaScript",
-      "EmailJS",
+      "PHP",
+      "MySQL",
       "Responsive Design",
       "UI/UX Optimization",
-
+      "Database Integration",
       "Production Deployment",
     ],
-    github: "",
-    webapp: "https://vibrant-india-expo.vercel.app/",
+    github: "https://github.com/sahil-darj/Naroda_group",
+    webapp: "https://narodagroup.com/",
   },
   {
     id: 2,
-    title: "Dinesh Industries",
+    title: "Arrow Laser Machine",
     description:
-      "A professional industrial business website built for Dinesh Industries, highlighting company services, products, and industrial capabilities. Designed with a clean, modern UI and optimized for performance and responsiveness across devices.",
-    image: Di,
+      "An industrial product showcase platform built using React.js for Arrow Laser Machine. Focuses on responsive UI, clean product presentation, and scalable architecture for performance and user experience.",
+    image: alm,
     tags: [
-      "React JS",
+      "React.js",
+      "JavaScript",
       "Tailwind CSS",
-      "HTML",
-      "CSS",
-      "Business Website",
-      "Responsive UI",
+      "Responsive Design",
+      "UI/UX Optimization",
+      "Production Deployment",
     ],
-    github: "",
-    webapp: "https://dinesh-industries-website.vercel.app/",
+    github: "https://github.com/sahil-darj/Naroda_group",
+    webapp: "https://arrowlasermachine.com/",
   },
   {
     id: 3,
-    title: "Industrial Machinery Website",
+    title: "Natraj Steel",
     description:
-      "A mobile-first industrial machinery showcase website designed to present machinery products with structured layouts, fast load times, and responsive design tailored for industrial clients and business users.",
-    image: Machine,
+      "A professional corporate website developed for Natraj Steel to highlight products, services, and client solutions. Built with a focus on modern design, responsive layouts, and clear navigation to enhance user experience.",
+    image: ns,
     tags: [
-      "HTML",
-      "Bootstrap",
-      "JavaScript",
-      "EmailJS",
-      "Responsive Design",
-      "Industrial UI",
-      "Performance Optimization",
-    ],
-    github: "",
-    webapp: "https://machinerywebsite.vercel.app/",
-  },
-
-  {
-    id: 0,
-    title: "CampusConnect",
-    description:
-      "CampusConnect is a full-stack MERN application designed to centralize and streamline event discovery for students, clubs, and faculty within a campus. The platform aggregates upcoming events, workshops, and activities into one user-friendly dashboard, enabling students to easily search, filter, and register for events.",
-    image: CC,
-    tags: [
-      "React JS",
-      "Tailwind",
       "HTML",
       "CSS",
-      "MongoDB",
-      "MongoDB Atlas",
-      "Express",
-      "Nodejs",
+      "JavaScript",
+      "Bootstrap",
+      "Responsive Design",
+      "UI/UX Optimization",
+      "Production Deployment",
     ],
-    github: "https://github.com/sahil-darj/Campus-Connect",
-    webapp: "",
+    github: "https://github.com/sahil-darj/Naroda_group",
+    webapp: "https://natrajsteel.com/",
   },
   {
-    id: 1,
+    id: 8,
     title: "PropertyPursuit",
     description:
       "A React + Node.js application that allows users to explore, filter, and compare properties. Designed with intuitive search and interactive listings to streamline property discovery.",
@@ -357,7 +358,7 @@ export const projects = [
     webapp: "",
   },
   {
-    id: 2,
+    id: 8,
     title: "RentEasy",
     description:
       "A full-stack web app that simplifies property rentals by connecting tenants and landlords. Features include property listings, rent tracking, and tenant management for a seamless housing experience.",
@@ -378,7 +379,122 @@ export const projects = [
     webapp: "",
   },
   {
-    id: 3,
+    id: 4,
+    title: "Vibrant India Expo",
+    description:
+      "A production-ready, responsive web platform developed for Vibrant India Expo to showcase exhibitors, industrial machinery, and services. The platform focuses on performance-optimized UI/UX, clear navigation, and scalability for real-world business use.",
+    image: VIE,
+    tags: [
+      "HTML",
+      "Bootstrap",
+      "Tailwind CSS",
+      "JavaScript",
+      "EmailJS",
+      "Responsive Design",
+      "UI/UX Optimization",
+
+      "Production Deployment",
+    ],
+    github: "",
+    webapp: "https://vibrant-india-expo.vercel.app/",
+  },
+  {
+    id: 5,
+    title: "Dinesh Industries",
+    description:
+      "A professional industrial business website built for Dinesh Industries, highlighting company services, products, and industrial capabilities. Designed with a clean, modern UI and optimized for performance and responsiveness across devices.",
+    image: Di,
+    tags: [
+      "React JS",
+      "Tailwind CSS",
+      "HTML",
+      "CSS",
+      "Business Website",
+      "Responsive UI",
+    ],
+    github: "",
+    webapp: "https://dinesh-industries-website.vercel.app/",
+  },
+  {
+    id: 6,
+    title: "Industrial Machinery Website",
+    description:
+      "A mobile-first industrial machinery showcase website designed to present machinery products with structured layouts, fast load times, and responsive design tailored for industrial clients and business users.",
+    image: Machine,
+    tags: [
+      "HTML",
+      "Bootstrap",
+      "JavaScript",
+      "EmailJS",
+      "Responsive Design",
+      "Industrial UI",
+      "Performance Optimization",
+    ],
+    github: "",
+    webapp: "https://machinerywebsite.vercel.app/",
+  },
+
+  {
+    id: 7,
+    title: "CampusConnect",
+    description:
+      "CampusConnect is a full-stack MERN application designed to centralize and streamline event discovery for students, clubs, and faculty within a campus. The platform aggregates upcoming events, workshops, and activities into one user-friendly dashboard, enabling students to easily search, filter, and register for events.",
+    image: CC,
+    tags: [
+      "React JS",
+      "Tailwind",
+      "HTML",
+      "CSS",
+      "MongoDB",
+      "MongoDB Atlas",
+      "Express",
+      "Nodejs",
+    ],
+    github: "https://github.com/sahil-darj/Campus-Connect",
+    webapp: "",
+  },
+  {
+    id: 8,
+    title: "PropertyPursuit",
+    description:
+      "A React + Node.js application that allows users to explore, filter, and compare properties. Designed with intuitive search and interactive listings to streamline property discovery.",
+    image: PP,
+    tags: [
+      "React JS",
+      "Node.js",
+      "Django",
+      "Express",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Validation",
+    ],
+    github: "",
+    webapp: "",
+  },
+  {
+    id: 8,
+    title: "RentEasy",
+    description:
+      "A full-stack web app that simplifies property rentals by connecting tenants and landlords. Features include property listings, rent tracking, and tenant management for a seamless housing experience.",
+    image: RE,
+    tags: [
+      "React JS",
+      "API",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "MongoDB",
+      "Express",
+      "Nodejs",
+      "Validation",
+      "Payment Integration",
+    ],
+    github: "",
+    webapp: "",
+  },
+  {
+    id: 9,
     title: "Premium Car Dealership",
     description:
       " A multi-page  frontend for a luxury car dealership. Browse curated inventories, view detailed specs, compare models side-by-side, and submit booking inquiries through a polished, responsive UI. Built with React Router, reusable components, and modern styling for a premium browsing experience.",
@@ -388,7 +504,7 @@ export const projects = [
     webapp: "",
   },
   {
-    id: 4,
+    id: 10,
     title: "MediScope",
     description:
       "A Django + React platform integrating disease prediction models and healthcare resources. Provides modern UI, medical insights, and AI-driven predictions to support health decisions.",
@@ -398,7 +514,7 @@ export const projects = [
     webapp: "",
   },
   {
-    id: 5,
+    id: 11,
     title: "Digital Financial Literacy Assistant",
     description:
       "An intelligent RAG-powered chatbot built with IBM Cloud to enhance financial literacy. Provides answers on topics like UPI, scams, interest rates, and banking in multiple languages, making financial knowledge accessible and secure for everyone.",
@@ -408,7 +524,7 @@ export const projects = [
     webapp: "",
   },
   {
-    id: 6,
+    id: 12,
     title: "ReWear",
     description:
       "ReWear is a web-based platform that enables users to exchange unused clothing through direct swaps or a point-based redemption system. The goal is to promote sustainable fashion and reduce textile waste by encouraging users to reuse wearable garments instead of discarding them.",
@@ -419,7 +535,7 @@ export const projects = [
   },
 
   {
-    id: 7,
+    id: 13,
     title: "Expense Tracker",
     description:
       "A personal finance tracker built with MERN stack to log, categorize, and visualize expenses. Includes charts, monthly insights, and secure user authentication for better budgeting.",
@@ -429,7 +545,7 @@ export const projects = [
     webapp: "",
   },
   {
-    id: 8,
+    id: 14,
     title: "Customer Segmentation",
     description:
       "A machine learning project that clusters customers based on spending and behavior. Helps businesses personalize marketing strategies and improve customer retention.",
@@ -440,7 +556,7 @@ export const projects = [
   },
 
   {
-    id: 9,
+    id: 15,
     title: "Blockchain Tech",
     description:
       "A blockchain-based project demonstrating secure transactions and transparent record-keeping. Highlights real-world use cases of smart contracts and distributed ledger technology.",
@@ -474,7 +590,23 @@ export const certificates = [
     image: JS,
     tags: ["Web development", "IBM", "2025"],
   },
-
+  {
+    id: 14,
+    title: "Full Stack Developer Internship",
+    description:
+      "Worked as a Full Stack Developer building production-ready web applications using React.js, Node.js, Express.js, and MongoDB. Developed REST APIs, integrated frontend with backend, and ensured responsive and scalable UI/UX.",
+    image: vitinternship,
+    tags: [
+      "Full Stack Development",
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "REST APIs",
+      "UI/UX",
+      "2025",
+    ],
+  },
   {
     id: 4,
     title: "TCS iON Career Edge – Young Professional ",

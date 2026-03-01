@@ -3,6 +3,7 @@ import { certificates } from "../../constants";
 
 const CertificateSection = () => {
   const [selectedCertificate, setSelectedCertificate] = useState(null);
+  const [visibleCount, setVisibleCount] = useState(6); // initially show 6
 
   const handleOpenModal = (certificate) => {
     setSelectedCertificate(certificate);
@@ -10,6 +11,15 @@ const CertificateSection = () => {
 
   const handleCloseModal = () => {
     setSelectedCertificate(null);
+  };
+
+  const handleToggleView = () => {
+    // Toggle between showing 6 and all
+    if (visibleCount === 6) {
+      setVisibleCount(certificates.length); // show all
+    } else {
+      setVisibleCount(6); // collapse back to 6
+    }
   };
 
   return (
@@ -28,7 +38,7 @@ const CertificateSection = () => {
 
       {/* Certificates Grid */}
       <div className="grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        {certificates.map((certificate) => (
+        {certificates.slice(0, visibleCount).map((certificate) => (
           <div
             key={certificate.id}
             onClick={() => handleOpenModal(certificate)}
@@ -64,6 +74,18 @@ const CertificateSection = () => {
           </div>
         ))}
       </div>
+
+      {/* Toggle Button */}
+      {certificates.length > 6 && (
+        <div className="flex justify-center mt-8">
+          <button
+            onClick={handleToggleView}
+            className="bg-purple-500 text-white px-6 py-3 rounded-xl font-semibold hover:bg-purple-600 transition"
+          >
+            {visibleCount === 6 ? "View More" : "View Less"}
+          </button>
+        </div>
+      )}
 
       {/* Modal */}
       {selectedCertificate && (

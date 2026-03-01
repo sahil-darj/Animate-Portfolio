@@ -3,6 +3,7 @@ import { projects } from "../../constants";
 
 const Work = () => {
   const [selectedProject, setSelectedProject] = useState(null);
+  const [visibleCount, setVisibleCount] = useState(6); // Show 6 initially
 
   const handleOpenModal = (project) => {
     setSelectedProject(project);
@@ -10,6 +11,15 @@ const Work = () => {
 
   const handleCloseModal = () => {
     setSelectedProject(null);
+  };
+
+  const handleToggleView = () => {
+    // Toggle between showing 6 and all
+    if (visibleCount === 6) {
+      setVisibleCount(projects.length); // Show all
+    } else {
+      setVisibleCount(6); // Collapse back
+    }
   };
 
   return (
@@ -29,7 +39,7 @@ const Work = () => {
 
       {/* Projects Grid */}
       <div className="grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        {projects.map((project) => (
+        {projects.slice(0, visibleCount).map((project) => (
           <div
             key={project.id}
             onClick={() => handleOpenModal(project)}
@@ -64,7 +74,19 @@ const Work = () => {
         ))}
       </div>
 
-      {/* Modal Container */}
+      {/* Toggle Button */}
+      {projects.length > 6 && (
+        <div className="flex justify-center mt-8">
+          <button
+            onClick={handleToggleView}
+            className="bg-purple-500 text-white px-6 py-3 rounded-xl font-semibold hover:bg-purple-600 transition"
+          >
+            {visibleCount === 6 ? "View More" : "View Less"}
+          </button>
+        </div>
+      )}
+
+      {/* Modal */}
       {selectedProject && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-4">
           <div className="bg-gray-900 rounded-xl shadow-2xl lg:w-full w-[90%] max-w-3xl overflow-hidden relative">
@@ -120,7 +142,6 @@ const Work = () => {
                     View Live
                   </a>
                 </div>
-                +
               </div>
             </div>
           </div>
