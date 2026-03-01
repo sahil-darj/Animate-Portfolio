@@ -73,7 +73,7 @@ import ET from "./assets/work_logo/ET.png";
 //import movierecLogo from "./assets/work_logo/movie_rec.png";
 //import taskremLogo from "./assets/work_logo/task_rem.png";
 //import npmLogo from "./assets/work_logo/npm.png";
-//mport webverLogo from "./assets/work_logo/web_dig.png";
+//import webverLogo from "./assets/work_logo/web_dig.png";
 ////import cmLogo from "./assets/work_logo/cm.png";
 //import imagesearchLogo from "./assets/work_logo/image_search.png";
 //import removebgLogo from "./assets/work_logo/remove_bg.png";
@@ -195,7 +195,7 @@ export const experiences = [
     img: ibm,
     role: " AI & Cloud Intern",
     company: "IBM SkillsBuild & Edunet Foundation",
-    date: "July2025- Aug 2025",
+    date: "July2025 - Aug 2025",
     desc: "Completed a project-based internship in AI, Cloud Computing, Data Analytics, and Machine Learning using IBM Cloud. Created AI agents, chatbots, and AutoAI models, gaining hands-on experience through masterclasses, cloud experiments, and real-world problem-solving under expert mentorship.  ",
     skills: [
       "Watsonx.ai ",
@@ -358,7 +358,7 @@ export const projects = [
     webapp: "",
   },
   {
-    id: 8,
+    id: 9,
     title: "RentEasy",
     description:
       "A full-stack web app that simplifies property rentals by connecting tenants and landlords. Features include property listings, rent tracking, and tenant management for a seamless housing experience.",
@@ -591,7 +591,7 @@ export const certificates = [
     tags: ["Web development", "IBM", "2025"],
   },
   {
-    id: 14,
+    id: 4,
     title: "Full Stack Developer Internship",
     description:
       "Worked as a Full Stack Developer building production-ready web applications using React.js, Node.js, Express.js, and MongoDB. Developed REST APIs, integrated frontend with backend, and ensured responsive and scalable UI/UX.",
@@ -608,14 +608,14 @@ export const certificates = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: "TCS iON Career Edge – Young Professional ",
     description: "Soft skills, business communication & workplace readiness.",
     image: TCS,
     tags: ["Career Edge", "TCS", "2025"],
   },
   {
-    id: 5,
+    id: 6,
     title: "Getting Started with Artificial Intelligence ",
     description:
       "focus on building a strong foundation by learning the fundamentals of computer science and mathematics, including linear algebra and statistics",
@@ -623,7 +623,7 @@ export const certificates = [
     tags: ["Data Analysis", "IBM-Edunet", "2025"],
   },
   {
-    id: 6,
+    id: 7,
     title: "Journey to Cloud Envisioning Your Solution_page-0001",
     description:
       "on-premises infrastructure resources — including data, applications and workloads — are migrated in part or whole to an external cloud provider through an internet connection.",
@@ -631,21 +631,21 @@ export const certificates = [
     tags: ["Cloud computing ", "IBM-edunet", "2025"],
   },
   {
-    id: 10,
+    id: 8,
     title: "AI for beginner",
     description: "HP certification in technology skills",
     image: HP,
     tags: ["AI", "HP", "2025"],
   },
   {
-    id: 8,
+    id: 9,
     title: "Full Stack Development Intern",
     description: "Internship experience in full-stack web development.",
     image: Fullstack,
     tags: ["Full stack using Django", "Patelweb", "2023"],
   },
   {
-    id: 9,
+    id: 10,
     title: "Web Development Intern",
     description:
       "Internship certification in front-end & back-end web development.",
@@ -654,7 +654,7 @@ export const certificates = [
   },
 
   {
-    id: 7,
+    id: 11,
     title: "Axis Bank Compitition",
     description: "Certification in digital banking and financial services.",
     image: Axis,
@@ -662,14 +662,14 @@ export const certificates = [
   },
 
   {
-    id: 11,
+    id: 12,
     title: "Horizon Program ",
     description: "Knowledge Skill Enhancement certification.",
     image: KSE,
     tags: ["Art", "KSE", "2021"],
   },
   {
-    id: 12,
+    id: 13,
     title: "Origami workshop",
     description: "Full stack web development bootcamp completion.",
     image: SB,
