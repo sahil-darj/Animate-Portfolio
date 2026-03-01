@@ -55,7 +55,7 @@ import ms from "./assets/education_logo/MS.jpg";
 
 // Project Section Logo's
 import VIE from "./assets/work_logo/vie.png";
-import Di from "./assets/work_logo/Di.png";
+import Di from "./assets/work_logo/di.png";
 import Machine from "./assets/work_logo/machine.png";
 import AI from "./assets/work_logo/Ai agent.png";
 import CC from "./assets/work_logo/CC.png";
